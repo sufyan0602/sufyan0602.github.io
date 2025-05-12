@@ -1,0 +1,20 @@
+body {
+
+    background-color: rgb(111, 144, 118);
+}
+
+.headers {
+
+    text-align: center;
+    padding: 50 px;
+}
+
+.Answer {
+
+    text-align: center;
+}
+
+.buttons {
+
+    padding: 50px;
+}

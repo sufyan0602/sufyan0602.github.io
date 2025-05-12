@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todostyle.css">
+    <script src="todo.js"></script>
+
+    <title>TodoApp</title>
+</head>
+<body onload="displayTime()">
+   
+    <div class="headers">
+        <h1 id="nameInput"></h1>
+        <h2>Current Time and Date:</h2>
+        <h2 id="datendtime" class="datendtime"></h2>
+    </div>
+
+
+    <script>
+        function popup() {
+          var input = prompt('Please enter your name');
+          if (input != null && input != "") {
+            var header = document.getElementById("nameInput");
+            header.innerHTML = "Hello " + input + "! Welcome to your To Do List!";
+          }
+          else if (input == null || input == "" ) {
+            popup();
+          }
+        } 
+        window.onload = function() {
+          popup();
+        };
+      </script>
+    <br><br>
+    <div class="inputs">
+        <input type="text" id="myInput" class="myInput" placeholder="Enter a ToDo Item" onkeydown="addText(event)">  
+        <div class="duedatebox">
+          <input type="checkbox" id="ifdate">
+          <label for="ifdate" class="duedateadd" id="duedateadd">Add Due Date</label><br>
+        </div>    
+    <br><br>  
+        <button class = "button-19" onclick="addText(event)" id="Addbtn">Add Text</button>
+        <button class = "button-19" onclick="clearChecked()">Clear Checked</button>
+        <button class = "button-19" onclick="clearall()">Clear All</button>
+        <button class = "button-19" onclick="downloadList()">Download list</button>
+        <div id="output"></div>
+    </div>
+
+</body>
+</html>
