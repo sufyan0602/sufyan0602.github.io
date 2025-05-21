@@ -1,16 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    text-align: center;
+
+    background-color: rgb(176, 195, 183);
+}
+/* Style for the header */
+.Welcome_Header {
+    text-align: center;           /* Center the header */
+    font-size: 2.5em;             /* Larger font size for the header */
+    margin-top: 50px;             /* Space above the header */
 }
 
-h1 {
-
-    color: #6a747f;
+/* Style for the sub-header */
+h2 {
+    text-align: center;           /* Center the sub-header */
+    font-size: 1.5em;             /* Slightly smaller font for the sub-header */
+    color: #555;                  /* Darker gray color for the sub-header */
 }
 
-#BUTTONS {
-    
-    text-align: center;
+/* Style for the Menu Buttons container */
+#Menu_Buttons {
+    display: flex;                /* Enable Flexbox */
+    justify-content: center;      /* Center the buttons horizontally */
+    gap: 20px;                    /* Add space between buttons */
+    margin-top: 30px;             /* Space above the buttons */
+    padding: 20px;                /* Padding inside the box */
+    border: 2px solid #ccc;       /* Light gray border around the box */
+    border-radius: 10px;          /* Rounded corners for the box */
+    background-color: #83a5a1;    /* Light gray background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+}
+
+/* Style for the buttons */
+#Menu_Buttons button {
+    padding: 10px 20px;           /* Increase padding to make buttons larger */
+    font-size: 16px;               /* Font size for the button text */
+    border: none;                 /* Remove default border */
+    background-color: #011e23;    /* Blue background for buttons */
+    color: white;                 /* White text color */
+    border-radius: 5px;           /* Rounded corners for buttons */
+    cursor: pointer;              /* Make the button appear clickable */
+    transition: background-color 0.3s; /* Smooth background color change on hover */
+}
+
+/* Button hover effect */
+#Menu_Buttons button:hover {
+    background-color: #0056b3;    /* Darker blue when hovering */
 }
