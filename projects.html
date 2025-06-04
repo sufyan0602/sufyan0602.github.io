@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
+  <title>Sufyan's Projects</title>
   <style>
     body {
       background-color: rgb(176, 195, 183);
@@ -45,6 +45,13 @@
     .card h3 {
       margin-top: 0;
       font-size: 1.4em;
+    }
+
+    .card h3 span {
+      font-size: 0.75em;
+      font-weight: normal;
+      font-style: italic;
+      color: #444;
     }
 
     .card p {
@@ -97,29 +104,53 @@
 </head>
 <body>
 
-  <div class="Welcome_Header">Welcome to My Projects</div>
-  <h2>Click a project to view its GitHub repository</h2>
+  <div class="Welcome_Header">🛠️ My Projects</div>
+  <h2>A showcase of the projects I've built — from early high school JavaScript to current C# console games</h2>
 
   <div class="projects">
 
     <div class="card">
-      <h3>DungeonPlanet</h3>
-      <p>A C# console dungeon crawler where you explore a dynamic map, battle enemies, and find the goal.</p>
-      <a href="https://github.com/sufyan0602/DungeonPlanet.git" target="_blank">View on GitHub</a>
+      <h3>DungeonPlanet <span>(C#)</span></h3>
+      <p>A console-based dungeon crawler where you explore a dynamic grid, battle enemies, and search for a secret key.</p>
+      <a href="https://github.com/sufyan0602/DungeonPlanet" target="_blank">View on GitHub</a>
     </div>
 
     <div class="card">
-      <h3>Simple Turn-Based Fighter</h3>
-      <p>Choose from 3 heroes and fight in a turn-based battle with replayability and character classes.</p>
-      <a href="https://github.com/sufyan0602/SimpleTurnBasedFighter.git" target="_blank">View on GitHub</a>
+      <h3>To-Do List <span>(JavaScript)</span></h3>
+      <p>A basic to-do list web app built using HTML, CSS, and JavaScript. <strong>One of my first projects from high school.</strong></p>
+      <a href="https://github.com/sufyan0602/To-Do-List" target="_blank">View on GitHub</a>
     </div>
 
     <div class="card">
-      <h3>BudgetingApp</h3>
-      <p>A simple budgeting tracker to record income/expenses, show balance, and navigate between menus.</p>
-      <a href="https://github.com/sufyan0602/BudgetingApp.git" target="_blank">View on GitHub</a>
+      <h3>Rock Paper Scissors <span>(C#)</span></h3>
+      <p>A simple Rock Paper Scissors console game vs the computer. Includes randomness and input validation.</p>
+      <a href="https://github.com/sufyan0602/Rock-Paper-Scissors" target="_blank">View on GitHub</a>
     </div>
 
+    <div class="card">
+      <h3>Country Guess <span>(C#)</span></h3>
+      <p>A fun console game where players guess countries based on clues. Great for sharpening memory and geography skills.</p>
+      <a href="https://github.com/sufyan0602/Country-Guess" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>BudgetingApp <span>(C#)</span></h3>
+      <p>A console-based budget tracker that records income, expenses, and calculates balance using menu navigation.</p>
+      <a href="https://github.com/sufyan0602/BudgetingApp" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Simple Turn-Based Fighter <span>(C#)</span></h3>
+      <p>A character selector and combat loop game with 3 hero classes and replay functionality. Built as an OOP exercise.</p>
+      <a href="https://github.com/sufyan0602/SimpleTurnBasedFighter" target="_blank">View on GitHub</a>
+    </div>
+
+  </div>
+
+  <div id="Menu_Buttons">
+    <button onclick="location.href='index.html'">🏠 Home</button>
+    <button onclick="location.href='about.html'">📄 About Me</button>
+    <button onclick="location.href='contact.html'">📬 Contact</button>
   </div>
 
 </body>
